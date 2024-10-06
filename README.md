@@ -1,0 +1,1 @@
+This Project is dedicated to my participation in AllStarCode's Hack-Ai-Thon. To provide a deeper implication, The Hack-AI-thon is a series of 3 challenges, each centered around an All Star Code core pillar (Dare Greatly, Celebrate Failure, Tell Your Story), where competitors will work with AI to boost creativity and produce imaginative projects.
