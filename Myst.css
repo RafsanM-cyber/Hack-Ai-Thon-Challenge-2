@@ -1,0 +1,196 @@
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Transparent Navbar styling */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+    background-color: transparent; /* Fully transparent */
+    border-radius: 15px; /* Rounded box effect */
+    text-align: center;
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Indicating the active/current section with a sticky element */
+.navbar.active {
+    background-color: rgba(181, 101, 29, 0.8); /* Soft brown to highlight current section */
+    color: white;
+    transform: scale(1.05); /* Slight zoom effect for the active link */
+}
+
+.navbar:hover {
+    background-color: rgba(181, 101, 29, 0.6); /* Hover effect */
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Removing line elements and keeping the box effect */
+.navbar::after {
+    display: none; /* Removed the line element */
+}
+
+
+/* Responsive Design for different screen sizes */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.3); /* Slightly more solid background on mobile */
+    }
+    
+    .navbar {
+        margin: 10px 0;
+        padding: 15px;
+        width: 90%;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 15px; /* Smaller text size for mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h4 {
+        font-size: 14px; /* Further reduce text size for small screens */
+    }
+
+    .navbar {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h4 {
+        font-size: 16px; /* Adjusting text size for medium screens */
+        width: 95%; /* Allow text to take up more space on smaller screens */
+    } 
+}
+
+
+.over {
+    background-color: rgba(255, 250, 231, 0.8); /* Darker on hover */
+    transform: scale(1.05); /* Slightly enlarge */
+}
+
+
+/* Header styles */
+.Header {
+    text-align: center; /* Centered header */
+    margin: 20px; /* Margin around header */
+    padding: 20px; /* Padding inside the header */
+    
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.Header:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.desc {
+    max-width: 80%; /* Limit width for readability */
+    margin: 20px auto; /* Center the description with margin */
+    padding: 20px; /* Padding for text */
+    text-align: justify; /* Justified text for readability */
+    background-color: rgba(255, 250, 231, 0.9); /* Light background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.desc:hover {
+    transform: scale(1.02); /* Slight pop effect */
+    transition: 0.5s;
+}
+
+
+
+
+/* Image styles */
+.img {
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center image */
+    margin: 20px; /* Margin around image */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for the rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+.contact-section {
+    width: 90%; /* Covers most of the page while keeping some spacing */
+    max-width: none; /* Removing the max-width constraint */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 2rem; /* Padding for spacing around the form */
+  }
+  
+  .form-group-container {
+    display: grid;
+    gap: 1.5rem; /* More space between form fields */
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%; /* Make inputs cover the full available width */
+    padding: 0.75rem; /* More padding for larger input areas */
+    border: 1px solid #d1d5db; /* Lighter border */
+    border-radius: 0.5rem; /* Rounded corners */
+    font-size: 1rem; /* Increasing the input text size */
+    line-height: 1.5rem;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+  
+  .form-textarea {
+    min-height: 180px; /* Larger textarea to cover more space */
+  }
+  
+  .form-submit {
+    width: 100%; /* Full-width button */
+    margin-top: 1.5rem;
+    background-color: transparent; /* Professional blue */
+    color: black;
+    font: bolder;
+    padding: 14px 6px;
+    border-radius: 0.5rem; /* Rounded corners for the button */
+    border: transparent;
+    background-color: #fff8e7;
+    font-size: 1.15rem; /* Larger button text */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .contact-intro {
+    font-size: 20px;
+  }
+
+  
+
